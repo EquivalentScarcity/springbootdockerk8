@@ -1,0 +1,7 @@
+replicaCount: 1
+image:
+  tag: 0.0.2
+service:
+  type: NodePort
+ingress:
+  enabled: false

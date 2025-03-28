@@ -1,0 +1,9 @@
+replicaCount: 3
+image:
+  tag: prod-latest
+service:
+  type: LoadBalancer
+resources:
+  limits:
+    cpu: "1000m"
+    memory: "1Gi"

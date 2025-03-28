@@ -1,0 +1,16 @@
+ 1078  kubectl get svc -n local-test\n
+ 1079  kubectl port-forward demo 8080:8080 -n local-test 
+ 1080  kubectl port-forward svc/demo 8080:8080 -n local-test 
+ 1081  kubectl port-forward svc/demo 8080:8080 -n local-test 
+ 1082  docker build -t demo:0.0.2 .
+ 1083  helm upgrade demo charts/ -f charts/envs/values-non-prod.yaml --namespace local-test
+ 1084  helm install demo charts/ -f charts/envs/values-non-prod.yaml --namespace local-test --dry-run
+ 1085  helm install demo charts/ -f charts/envs/values-non-prod.yaml --namespace local-test --dry-run
+ 1086  helm install demo charts/ -f charts/envs/values-non-prod.yaml --namespace local-test
+ 1087  helm upgrade demo charts/ -f charts/envs/values-non-prod.yaml --namespace local-test
+ 1088  kubectl get svc -n local-test\n
+ 1089  kubectl get pods -n local-test\n
+ 1090  kubectl port-forward svc/demo 8080:8080 -n local-test 
+ 1091  clear
+ 1092  history
+ 1093  history
